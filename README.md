@@ -1,6 +1,6 @@
 # README
 
-This is a variation of the [Laravel](https://laravel.com/) [Getting Started](https://github.com/laravel/breeze) example on [Aptible](https://aptible.com).
+This is a barebones [Laravel](https://laravel.com/) example that can be deployed on [Aptible](https://aptible.com).
 
 The app in this repo is deployed at [Link Goes Here](Link Goes Here).
 
