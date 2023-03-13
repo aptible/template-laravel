@@ -2,7 +2,7 @@
 
 This is a barebones [Laravel](https://laravel.com/) example that can be deployed on [Aptible](https://aptible.com).
 
-The app in this repo is deployed at [Link Goes Here](Link Goes Here).
+The app in this repo is deployed at [https://app-52756.on-aptible.com/](https://app-52756.on-aptible.com/).
 
 ## Deployment
 
