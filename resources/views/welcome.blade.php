@@ -5,12 +5,16 @@
       font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
     }
     code {
-      background-color: #FFB607;
-      padding: 2px 3px;
+      background-color: #000000;
+      padding: 0px 6px;
       border-radius: 5px;
+      color: #FFFFFF;
+    }
+    ul li {
+      padding-bottom: 10px;
     }
   </style>
-
+<title>Aptible - Laravel Template</title>
   <div style="display: flex; justify-content: center; width: 100vw; height: 100vh; background-image: url(https://nextgen.aptible.com/background-pattern-v2.png);">
     <div style="max-width: 640px; padding-top: 20px;">
       <div style=" border: 1px solid #E7E8E8; padding: 0 20px; background-color: #fff; border-radius: 6px; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);">
