@@ -1,3 +1,6 @@
+<br>
+<img src="https://user-images.githubusercontent.com/4295811/226696507-217a0311-1f1c-46f8-825b-e5231cc5d462.svg"  width="300">
+
 # README
 
 This is a barebones [Laravel](https://laravel.com/) example deployed on [Aptible](https://aptible.com). The app in this repo is deployed at [https://app-52756.on-aptible.com/](https://app-52756.on-aptible.com/).
