@@ -5,7 +5,9 @@
 
 This is a barebones [Laravel](https://laravel.com/) example deployed on [Aptible](https://aptible.com). The app in this repo is deployed at [https://app-52756.on-aptible.com/](https://app-52756.on-aptible.com/).
 
-[Deploy on Aptible](https://app.aptible.com/create)
+[![Deploy on Aptible](https://app.aptible.com/deploy-on-aptible.svg)](https://app.aptible.com/create)
+
+[Detailed docs](https://www.aptible.com/docs/php-quickstart)
 
 ## Configuration
 
