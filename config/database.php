@@ -36,9 +36,18 @@ function generateAptibleConnection() {
         // fail to connect to MySQL with an Access Denied error.
         $aptibleConnection['driver'] = 'mysql';
         $aptibleConnection['collation'] = 'utf8_unicode_ci';
+        // PHP 8.5 deprecates PDO::MYSQL_ATTR_SSL_*. Use Pdo\Mysql when it
+        // exists, and only read the old constants on PHP versions that
+        // do not define the new ones.
+        $sslCipher = defined('Pdo\Mysql::ATTR_SSL_CIPHER')
+            ? \Pdo\Mysql::ATTR_SSL_CIPHER
+            : PDO::MYSQL_ATTR_SSL_CIPHER;
+        $sslVerifyServerCert = defined('Pdo\Mysql::ATTR_SSL_VERIFY_SERVER_CERT')
+            ? \Pdo\Mysql::ATTR_SSL_VERIFY_SERVER_CERT
+            : PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT;
         $aptibleConnection['options'] = [
-        PDO::MYSQL_ATTR_SSL_CIPHER => 'DHE-RSA-AES256-SHA',
-        PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
+            $sslCipher => 'DHE-RSA-AES256-SHA',
+            $sslVerifyServerCert => false,
         ];
     } elseif ($scheme === "postgresql") {
         $aptibleConnection['driver'] = 'pgsql';
