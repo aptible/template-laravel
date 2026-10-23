@@ -117,6 +117,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Session Serialization
+    |--------------------------------------------------------------------------
+    |
+    | This value controls how session data is serialized for storage. JSON
+    | avoids PHP's native serializer, which can be abused by gadget chains.
+    |
+    | Supported: "php", "json"
+    |
+    */
+
+    'serialization' => 'json',
+
+    /*
+    |--------------------------------------------------------------------------
     | Session Cookie Name
     |--------------------------------------------------------------------------
     |
